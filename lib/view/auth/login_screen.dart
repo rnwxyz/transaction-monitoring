@@ -60,7 +60,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: const [
                           Text(
-                            "Monitoring Transansi",
+                            "Monitoring Transaksi",
                             style: TextStyle(
                               fontSize: 23,
                               fontWeight: FontWeight.bold,

@@ -78,6 +78,23 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         centerTitle: true,
         elevation: 0,
+        actions: [
+          IconButton(
+            onPressed: () {
+              context
+                  .read<MutasiBloc>()
+                  .add(MutasiGetEvent(loadMore: false, q: ''));
+              searchController.clear();
+              dateRangeController.clear();
+              dateStartController.clear();
+              dateEndController.clear();
+              itemController.clear();
+              gudangController.clear();
+              filter = null;
+            },
+            icon: const Icon(Icons.restart_alt),
+          ),
+        ],
       ),
       drawer: Drawer(
         backgroundColor: Colors.grey[200],
