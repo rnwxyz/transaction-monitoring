@@ -5,8 +5,6 @@ import 'package:app_monitoring_transaction/blocs/mutasi/mutasi_bloc.dart';
 import 'package:app_monitoring_transaction/blocs/mutasi_detail/mutasi_detail_bloc.dart';
 import 'package:app_monitoring_transaction/blocs/resume/resume_bloc.dart';
 import 'package:app_monitoring_transaction/view/auth/login_screen.dart';
-import 'package:app_monitoring_transaction/view/home/mutasi_detail_screen.dart';
-import 'package:app_monitoring_transaction/view/home/resume_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/date_symbol_data_local.dart';
