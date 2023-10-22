@@ -106,7 +106,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 color: Colors.white,
               ),
               child: Image(
-                image: AssetImage("assets/bhawana.png"),
+                image: AssetImage("assets/logo.png"),
               ),
             ),
             const ListTile(
@@ -482,6 +482,13 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 dateRangeController.clear();
                                                 itemController.clear();
                                                 gudangController.clear();
+                                                context.read<MutasiBloc>().add(
+                                                      MutasiGetEvent(
+                                                        loadMore: false,
+                                                        q: searchController
+                                                            .text,
+                                                      ),
+                                                    );
                                                 Navigator.pop(context);
                                               },
                                               child: const Text('reset'),
